@@ -1,0 +1,6 @@
+# ignore objects and archives anywhere
+*.[ao]
+
+# ignore our build directories
+/Pi/Build/**
+/FPGA/Build/**
