@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package location;
+
+message Location {
+    optional int64 receivedTimeNS = 1;  // Unix timestamp
+    optional LatLong location = 2;      // location received
+
+    message LatLong {
+        optional double latitude = 1;       // longitude
+        optional double longitude = 2;      // latitude
+    }
+}
